@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		8CC34C9E5319BA5C08DCF18F /* Pods_AdmobNativeAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A80065EED7333862A97E961B /* Pods_AdmobNativeAds.framework */; };
-		8E789AB824D923B80024D1FC /* AdmobNativeAdsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E789AB724D923B80024D1FC /* AdmobNativeAdsApp.swift */; };
+		8E40DB5D24D92FD6007973B2 /* UIKitNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E40DB5C24D92FD6007973B2 /* UIKitNativeAdView.xib */; };
+		8E40DB5F24D933C8007973B2 /* NativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40DB5E24D933C8007973B2 /* NativeAdView.swift */; };
+		8E789AB824D923B80024D1FC /* AdMobNativeAdsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E789AB724D923B80024D1FC /* AdMobNativeAdsApp.swift */; };
 		8E789ABA24D923B80024D1FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E789AB924D923B80024D1FC /* ContentView.swift */; };
 		8E789ABC24D923B90024D1FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E789ABB24D923B90024D1FC /* Assets.xcassets */; };
 		8E789ABF24D923B90024D1FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E789ABE24D923B90024D1FC /* Preview Assets.xcassets */; };
+		8E789AC824D926600024D1FC /* AdLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E789AC724D926600024D1FC /* AdLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E5BF282DED8BD6320AD6718 /* Pods-AdmobNativeAds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdmobNativeAds.release.xcconfig"; path = "Target Support Files/Pods-AdmobNativeAds/Pods-AdmobNativeAds.release.xcconfig"; sourceTree = "<group>"; };
+		8E40DB5C24D92FD6007973B2 /* UIKitNativeAdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIKitNativeAdView.xib; sourceTree = "<group>"; };
+		8E40DB5E24D933C8007973B2 /* NativeAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdView.swift; sourceTree = "<group>"; };
 		8E789AB424D923B80024D1FC /* AdmobNativeAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdmobNativeAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E789AB724D923B80024D1FC /* AdmobNativeAdsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdmobNativeAdsApp.swift; sourceTree = "<group>"; };
+		8E789AB724D923B80024D1FC /* AdMobNativeAdsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobNativeAdsApp.swift; sourceTree = "<group>"; };
 		8E789AB924D923B80024D1FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8E789ABB24D923B90024D1FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E789ABE24D923B90024D1FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8E789AC024D923B90024D1FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E789AC724D926600024D1FC /* AdLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdLoader.swift; sourceTree = "<group>"; };
 		A613491ABEDFA2FFE592415A /* Pods-AdmobNativeAds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdmobNativeAds.debug.xcconfig"; path = "Target Support Files/Pods-AdmobNativeAds/Pods-AdmobNativeAds.debug.xcconfig"; sourceTree = "<group>"; };
 		A80065EED7333862A97E961B /* Pods_AdmobNativeAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdmobNativeAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,8 +82,11 @@
 		8E789AB624D923B80024D1FC /* AdmobNativeAds */ = {
 			isa = PBXGroup;
 			children = (
-				8E789AB724D923B80024D1FC /* AdmobNativeAdsApp.swift */,
+				8E789AC724D926600024D1FC /* AdLoader.swift */,
+				8E789AB724D923B80024D1FC /* AdMobNativeAdsApp.swift */,
 				8E789AB924D923B80024D1FC /* ContentView.swift */,
+				8E40DB5E24D933C8007973B2 /* NativeAdView.swift */,
+				8E40DB5C24D92FD6007973B2 /* UIKitNativeAdView.xib */,
 				8E789AC624D924E00024D1FC /* Resources */,
 			);
 			path = AdmobNativeAds;
@@ -160,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E40DB5D24D92FD6007973B2 /* UIKitNativeAdView.xib in Resources */,
 				8E789ABF24D923B90024D1FC /* Preview Assets.xcassets in Resources */,
 				8E789ABC24D923B90024D1FC /* Assets.xcassets in Resources */,
 			);
@@ -214,8 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E40DB5F24D933C8007973B2 /* NativeAdView.swift in Sources */,
 				8E789ABA24D923B80024D1FC /* ContentView.swift in Sources */,
-				8E789AB824D923B80024D1FC /* AdmobNativeAdsApp.swift in Sources */,
+				8E789AC824D926600024D1FC /* AdLoader.swift in Sources */,
+				8E789AB824D923B80024D1FC /* AdMobNativeAdsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
